@@ -101,7 +101,7 @@ python eval_agent_for_t2i_compbench.py --user_query $USER_QUERY --model $MODEL
 
 
 
-## Open-ended Question Dataset
+## Open-Ended User Query Dataset
 We propose the **Open-Ended User Query Dataset**, developed through a user study. As part of this process, we gathered questions from various sources, focusing on aspects users consider most important when evaluating new models. After cleaning, filtering, and expanding the initial set, we compiled a refined dataset of 100 open-ended user queries.
 
 Check out the details of the [open-ended user query dataset](https://github.com/zhangfan-p/evaluation-agent-private/tree/main/dataset) 
