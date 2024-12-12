@@ -3,7 +3,7 @@
 [![Visitor](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVchitect%2FEvaluation-Agent&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
-This repository will contain the implementation of the following paper:
+This repository contains the implementation of the following work:
 > **Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models**<br>
 > [Fan Zhang](https://github.com/zhangfan-p)<sup>∗</sup>, [Shulin Tian](https://shulin16.github.io/)<sup>∗</sup>, [Ziqi Huang](https://ziqihuangg.github.io/)<sup>∗</sup>, [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/index.html)<sup>+</sup>, [Ziwei Liu](https://liuziwei7.github.io/)<sup>+</sup><br>
 
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 <a name="usage"></a>
 ## Usage
 
-First, you need to configure the open_api_key. You can do it as follows:
+First, you need to configure the `open_api_key`. You can do it as follows:
 ```
 export OPENAI_API_KEY="your_api_key_here"
 ```
@@ -104,10 +104,10 @@ python eval_agent_for_t2i_compbench.py --user_query $USER_QUERY --model $MODEL
 ## Open-Ended User Query Dataset
 We propose the **Open-Ended User Query Dataset**, developed through a user study. As part of this process, we gathered questions from various sources, focusing on aspects users consider most important when evaluating new models. After cleaning, filtering, and expanding the initial set, we compiled a refined dataset of 100 open-ended user queries.
 
-Check out the details of the [open-ended user query dataset](https://github.com/zhangfan-p/evaluation-agent-private/tree/main/dataset) 
+Check out the details of the [open-ended user query dataset](https://github.com/Vchitect/Evaluation-Agent/tree/main/dataset) 
 
 ![statistic](./assets/open_dataset_stats.png)
-The three graphs give an overview of the distributions and types of our curated open queries set. Left: the distribution of question types, which are categorized as General or Specific. Middle: the distribution of the ability types, which are categorized as Prompt Following, Visual Quality, Creativity, Knowledge and Others. Right: the distribution of the content categories, which are categorized as History and Culture, Film and Entertainment, Science and Education, Fashion, Medical, Game Design, Architecture and Interior Design, Law.
+The three graphs give an overview of the distributions and types of our curated open queries set. Left: the distribution of question types, which are categorized as `General` or `Specific`. Middle: the distribution of the ability types, which are categorized as `Prompt Following`, `Visual Quality`, `Creativity`, `Knowledge` and `Others`. Right: the distribution of the content categories, which are categorized as `History and Culture`, `Film and Entertainment`, `Science and Education`, `Fashion`, `Medical`, `Game Design`, `Architecture and Interior Design`, `Law`.
 
 
 ## Citation
@@ -115,7 +115,7 @@ The three graphs give an overview of the distributions and types of our curated 
 If you find our repo useful for your research, please consider citing our paper:
 
 ```bibtex
-@article{zhang2024evalagent,
+@article{zhang2024evaluationagent,
     author = {Zhang, Fan and Tian, Shulin and Huang, Ziqi and Qiao, Yu and Liu, Ziwei},
     title = {Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models},
     year = {2024}
