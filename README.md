@@ -116,8 +116,9 @@ If you find our repo useful for your research, please consider citing our paper:
 
 ```bibtex
 @article{zhang2024evaluationagent,
-    author = {Zhang, Fan and Tian, Shulin and Huang, Ziqi and Qiao, Yu and Liu, Ziwei},
     title = {Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models},
+    author = {Zhang, Fan and Tian, Shulin and Huang, Ziqi and Qiao, Yu and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2412.09645},
     year = {2024}
 }
 ```
