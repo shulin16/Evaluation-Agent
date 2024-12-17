@@ -12,11 +12,13 @@ This repository contains the implementation of the following work:
 
 <a name="overview"></a>
 ## :mega: Overview
+
+Recent advancements in visual generative models have enabled high-quality image and video generation, opening diverse applications. However, evaluating these models often demands sampling hundreds or thousands of images or videos, making the process computationally expensive, especially for diffusion-based models with inherently slow sampling. Moreover, existing evaluation methods rely on rigid pipelines that overlook specific user needs and provide numerical results without clear explanations. In contrast, humans can quickly form impressions of a model's capabilities by observing only a few samples. To mimic this, we propose the Evaluation Agent framework, which employs human-like strategies for efficient, dynamic, multi-round evaluations using only a few samples per round, while offering detailed, user-tailored analyses. It offers four key advantages: 1) efficiency, 2) promptable evaluation tailored to diverse user needs, 3) explainability beyond single numerical scores, and 4) scalability across various models and tools. Experiments show that Evaluation Agent reduces evaluation time to 10% of traditional methods while delivering comparable results. The Evaluation Agent framework is fully open-sourced to advance research in visual generative models and their efficient evaluation.
+
 ![Framework](./assets/fig_framework.jpg)
-We propose the **Evaluation Agent** framework, which simulates the human evaluation process. It can handle free-form evaluation requests from users and efficiently assess visual generative models through dynamic, multi-step evaluations, ultimately providing detailed analysis. It offers four key advantages: <b>1) dynamic assessment</b> enables efficient and detailed evaluations, <b>2) promptable evaluation</b> tailored to diverse user needs, <b>3) detailed and explainable</b> evaluation results rather than a single numerical score, and <b>4) scalability</b> to accommodate various visual generative models and evaluation tools.
 
 
-
+**Overview of Evaluation Agent Framework.** This framework leverages LLM-powered agents for efficient and flexible visual model assessments. As shown, it consists of two stages: (a) the Proposal Stage, where user queries are decomposed into sub-aspects, and prompts are generated, and (b) the Execution Stage, where visual content is generated and evaluated using an Evaluation Toolkit. The two stages interact iteratively to dynamically assess models based on user queries.
 
 <a name="installation"></a>
 ## :hammer: Installation
